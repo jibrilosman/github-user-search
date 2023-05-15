@@ -1,0 +1,53 @@
+
+/* [data-theme="dark"] {
+    background-color: #1e1e1e;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+[data-theme="light"] {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.5s ease;
+} */
+:root {
+    --color-bg: #141d2e;
+    --color-text: #fff;
+    --color-btn: #0077ff;
+    --color-main: #1e2b48;
+    --color-bg-light: #f5f7ff;
+    --color-text-light: #2a3341;
+    --color-main-light: #fefefe; 
+}
+[data-theme="dark"]  {
+    background: var(--color-bg);
+    color: var(--color-text);  
+    transition: all 0.5s ease-in-out;
+}
+[data-theme="light"]  {
+    background: var(--color-bg-light);
+    color: var(--color-text-light);
+    transition: all 0.5s ease-in-out;
+}
+[data-theme="dark"] .hero-btn {
+    /* background: var(--color-btn); */
+    color: var(--color-text);
+}
+[data-theme="light"] .hero-btn {
+    background: var(--color-bg);
+    color: #000;
+}
+[data-theme="dark"] main {
+    background: var(--color-main);
+    color: var(--color-text);
+}
+[data-theme="light"] main {
+    background: var(--color-main-light);
+    color: var(--color-text-light);
+}
+[data-theme="dark"] .result-header-img img {
+    border: 3px solid var(--color-bg);
+}
+[data-theme="light"] .result-header-img img {
+    border: 3px solid var(--color-bg-light);
+}
+
